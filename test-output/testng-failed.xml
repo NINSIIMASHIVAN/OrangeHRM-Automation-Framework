@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="classes" name="Failed suite [OrangeHRMSuite]">
+  <test thread-count="5" parallel="classes" name="OrangeHRMTest(failed)">
+    <classes>
+      <class name="com.OrangeHRM.test.LoginPageTest">
+        <methods>
+          <include name="invalidLoginTest"/>
+          <include name="verifyValidLoginTest"/>
+          <include name="loadConfig"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="setupPages"/>
+        </methods>
+      </class> <!-- com.OrangeHRM.test.LoginPageTest -->
+      <class name="com.OrangeHRM.test.DummyClass">
+        <methods>
+          <include name="loadConfig"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="dummyTest"/>
+        </methods>
+      </class> <!-- com.OrangeHRM.test.DummyClass -->
+      <class name="com.OrangeHRM.test.HomePageTest">
+        <methods>
+          <include name="loadConfig"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="setupPages"/>
+          <include name="verifyOrangeHRMLogo"/>
+        </methods>
+      </class> <!-- com.OrangeHRM.test.HomePageTest -->
+      <class name="com.OrangeHRM.test.DummyClass2">
+        <methods>
+          <include name="dummyTest"/>
+          <include name="loadConfig"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.OrangeHRM.test.DummyClass2 -->
+    </classes>
+  </test> <!-- OrangeHRMTest(failed) -->
+</suite> <!-- Failed suite [OrangeHRMSuite] -->

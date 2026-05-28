@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="OrangeHRMSuite" parallel="classes" thread-count="5">
+	<test name="OrangeHRMTest">
+		<classes>
+			<class name="com.OrangeHRM.test.DummyClass" ></class>
+			<class name="com.OrangeHRM.test.DummyClass2" ></class>
+			<class name="com.OrangeHRM.test.LoginPageTest" ></class>
+		<class name="com.OrangeHRM.test.HomePageTest" ></class>
+        </classes>
+	</test>
+</suite>
