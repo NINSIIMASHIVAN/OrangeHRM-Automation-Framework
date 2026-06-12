@@ -28,8 +28,12 @@ public void login(String username,String password)
 actionDriver.enterText(userNamefield, username);
 actionDriver.enterText(passwordfield, password);
 actionDriver.click(loginbtnfield);
+
 actionDriver.waitForPageToLoad();
 
+//create a wait specifically for the dashboard.
+//By adminTab =By.xpath("//span[text()='Admin']");
+//actionDriver.waitForElement(By.xpath("//span[text()='Admin']"));
 System.out.println(driver.getCurrentUrl());
 }
 
@@ -42,9 +46,15 @@ public boolean isErrorMessageDisplayed()
 //method to get text from error message
 public String getErrorMessageText() 
 {
-	return actionDriver.getText(errormessage);	
+    String text = actionDriver.getText(errormessage);
+    System.out.println("Error message from page: '" + text + "'");
+    return text;
 }
 
+public boolean isErrorMessageDisplayed1() 
+{
+    return actionDriver.isDisplayed(errormessage);
+}
 //method to verify if error is correct or not
 public boolean verifyErrorMessage(String expectedError) 
 {

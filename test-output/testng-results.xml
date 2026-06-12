@@ -1,91 +1,375 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="8" passed="3" failed="5" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-05-26T17:12:12 EAT" name="OrangeHRMSuite" finished-at="2026-05-26T17:12:37 EAT" duration-ms="25404">
+  <suite started-at="2026-06-12T15:50:15 EAT" name="OrangeHRMSuite" finished-at="2026-06-12T15:55:21 EAT" duration-ms="305752">
     <groups>
     </groups>
-    <test started-at="2026-05-26T17:12:12 EAT" name="OrangeHRMTest" finished-at="2026-05-26T17:12:37 EAT" duration-ms="25404">
+    <test started-at="2026-06-12T15:50:15 EAT" name="OrangeHRMTest" finished-at="2026-06-12T15:55:21 EAT" duration-ms="305752">
       <class name="com.OrangeHRM.test.DummyClass2">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.OrangeHRM.test.DummyClass2@3c9754d8]" started-at="2026-05-26T17:12:12 EAT" name="setup" finished-at="2026-05-26T17:12:21 EAT" duration-ms="9661" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.OrangeHRM.test.DummyClass2@c0c2f8d]" started-at="2026-06-12T15:50:39 EAT" name="setup" finished-at="2026-06-12T15:50:59 EAT" duration-ms="20468" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="dummyTest()[pri:0, instance:com.OrangeHRM.test.DummyClass2@3c9754d8]" started-at="2026-05-26T17:12:21 EAT" name="dummyTest" finished-at="2026-05-26T17:12:21 EAT" duration-ms="25" status="PASS">
+        <test-method signature="dummyTest()[pri:0, instance:com.OrangeHRM.test.DummyClass2@c0c2f8d]" started-at="2026-06-12T15:50:59 EAT" name="dummyTest" finished-at="2026-06-12T15:50:59 EAT" duration-ms="32" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dummyTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.OrangeHRM.test.DummyClass2@3c9754d8]" started-at="2026-05-26T17:12:21 EAT" name="tearDown" finished-at="2026-05-26T17:12:22 EAT" duration-ms="263" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.OrangeHRM.test.DummyClass2@c0c2f8d]" started-at="2026-06-12T15:50:59 EAT" name="tearDown" finished-at="2026-06-12T15:51:00 EAT" duration-ms="319" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.OrangeHRM.test.DummyClass2 -->
       <class name="com.OrangeHRM.test.HomePageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.OrangeHRM.test.HomePageTest@61322f9d]" started-at="2026-05-26T17:12:12 EAT" name="setup" finished-at="2026-05-26T17:12:22 EAT" duration-ms="9950" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.OrangeHRM.test.HomePageTest@f79e]" started-at="2026-06-12T15:52:49 EAT" name="setup" finished-at="2026-06-12T15:53:10 EAT" duration-ms="21715" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setupPages()[pri:0, instance:com.OrangeHRM.test.HomePageTest@61322f9d]" started-at="2026-05-26T17:12:22 EAT" name="setupPages" finished-at="2026-05-26T17:12:22 EAT" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupPages -->
-        <test-method signature="verifyOrangeHRMLogo()[pri:0, instance:com.OrangeHRM.test.HomePageTest@61322f9d]" started-at="2026-05-26T17:12:22 EAT" name="verifyOrangeHRMLogo" finished-at="2026-05-26T17:12:25 EAT" duration-ms="3027" status="PASS">
+        <test-method signature="verifyOrangeHRMLogo(java.lang.String,java.lang.String)[pri:0, instance:com.OrangeHRM.test.HomePageTest@f79e]" started-at="2026-06-12T15:53:10 EAT" name="verifyOrangeHRMLogo" data-provider="validLoginData" finished-at="2026-06-12T15:54:13 EAT" duration-ms="62420" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[logo is not visible  expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: logo is not visible  expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at com.OrangeHRM.test.HomePageTest.verifyOrangeHRMLogo(HomePageTest.java:31)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyOrangeHRMLogo -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.OrangeHRM.test.HomePageTest@61322f9d]" started-at="2026-05-26T17:12:25 EAT" name="tearDown" finished-at="2026-05-26T17:12:25 EAT" duration-ms="470" status="PASS">
+        <test-method is-config="true" signature="setupPages()[pri:0, instance:com.OrangeHRM.test.HomePageTest@f79e]" started-at="2026-06-12T15:53:10 EAT" name="setupPages" finished-at="2026-06-12T15:53:10 EAT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupPages -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.OrangeHRM.test.HomePageTest@f79e]" started-at="2026-06-12T15:54:13 EAT" name="tearDown" finished-at="2026-06-12T15:54:13 EAT" duration-ms="192" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.OrangeHRM.test.HomePageTest@f79e]" started-at="2026-06-12T15:54:13 EAT" name="setup" finished-at="2026-06-12T15:54:18 EAT" duration-ms="5469" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setupPages()[pri:0, instance:com.OrangeHRM.test.HomePageTest@f79e]" started-at="2026-06-12T15:54:18 EAT" name="setupPages" finished-at="2026-06-12T15:54:18 EAT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupPages -->
+        <test-method signature="verifyOrangeHRMLogo(java.lang.String,java.lang.String)[pri:0, instance:com.OrangeHRM.test.HomePageTest@f79e]" started-at="2026-06-12T15:54:18 EAT" name="verifyOrangeHRMLogo" data-provider="validLoginData" finished-at="2026-06-12T15:55:21 EAT" duration-ms="62261" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[logo is not visible  expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: logo is not visible  expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at com.OrangeHRM.test.HomePageTest.verifyOrangeHRMLogo(HomePageTest.java:31)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyOrangeHRMLogo -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.OrangeHRM.test.HomePageTest@f79e]" started-at="2026-06-12T15:55:21 EAT" name="tearDown" finished-at="2026-06-12T15:55:21 EAT" duration-ms="235" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.OrangeHRM.test.HomePageTest -->
       <class name="com.OrangeHRM.test.LoginPageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.OrangeHRM.test.LoginPageTest@3bf7ca37]" started-at="2026-05-26T17:12:12 EAT" name="setup" finished-at="2026-05-26T17:12:21 EAT" duration-ms="9426" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setupPages()[pri:0, instance:com.OrangeHRM.test.LoginPageTest@3bf7ca37]" started-at="2026-05-26T17:12:21 EAT" name="setupPages" finished-at="2026-05-26T17:12:21 EAT" duration-ms="49" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupPages -->
-        <test-method signature="invalidLoginTest()[pri:0, instance:com.OrangeHRM.test.LoginPageTest@3bf7ca37]" started-at="2026-05-26T17:12:21 EAT" name="invalidLoginTest" finished-at="2026-05-26T17:12:25 EAT" duration-ms="3339" status="PASS">
+        <test-method signature="invalidLoginTest(java.lang.String,java.lang.String)[pri:0, instance:com.OrangeHRM.test.LoginPageTest@305b7c14]" started-at="2026-06-12T15:51:00 EAT" name="invalidLoginTest" data-provider="invalidLoginData" finished-at="2026-06-12T15:51:10 EAT" duration-ms="10730" status="FAIL">
+          <exception class="org.testng.internal.reflect.MethodMatcherException">
+            <message>
+              <![CDATA[
+[public void com.OrangeHRM.test.LoginPageTest.invalidLoginTest(java.lang.String,java.lang.String)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
+Data provider mismatch
+Method: invalidLoginTest([java.lang.String arg0, java.lang.String arg1])
+Arguments: [(java.lang.String) invalidLoginData]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.internal.reflect.MethodMatcherException: 
+[public void com.OrangeHRM.test.LoginPageTest.invalidLoginTest(java.lang.String,java.lang.String)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
+Data provider mismatch
+Method: invalidLoginTest([java.lang.String arg0, java.lang.String arg1])
+Arguments: [(java.lang.String) invalidLoginData]
+at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:46)
+at org.testng.internal.Parameters.injectParameters(Parameters.java:915)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.internal.reflect.MethodMatcherException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidLoginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.OrangeHRM.test.LoginPageTest@3bf7ca37]" started-at="2026-05-26T17:12:25 EAT" name="tearDown" finished-at="2026-05-26T17:12:25 EAT" duration-ms="652" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.OrangeHRM.test.LoginPageTest@3bf7ca37]" started-at="2026-05-26T17:12:25 EAT" name="setup" finished-at="2026-05-26T17:12:31 EAT" duration-ms="5876" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.OrangeHRM.test.LoginPageTest@305b7c14]" started-at="2026-06-12T15:51:00 EAT" name="setup" finished-at="2026-06-12T15:51:06 EAT" duration-ms="5407" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyValidLoginTest()[pri:0, instance:com.OrangeHRM.test.LoginPageTest@3bf7ca37]" started-at="2026-05-26T17:12:31 EAT" name="verifyValidLoginTest" finished-at="2026-05-26T17:12:37 EAT" duration-ms="5675" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyValidLoginTest -->
-        <test-method is-config="true" signature="setupPages()[pri:0, instance:com.OrangeHRM.test.LoginPageTest@3bf7ca37]" started-at="2026-05-26T17:12:31 EAT" name="setupPages" finished-at="2026-05-26T17:12:31 EAT" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setupPages()[pri:0, instance:com.OrangeHRM.test.LoginPageTest@305b7c14]" started-at="2026-06-12T15:51:06 EAT" name="setupPages" finished-at="2026-06-12T15:51:06 EAT" duration-ms="7" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupPages -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.OrangeHRM.test.LoginPageTest@3bf7ca37]" started-at="2026-05-26T17:12:37 EAT" name="tearDown" finished-at="2026-05-26T17:12:37 EAT" duration-ms="331" status="PASS">
+        <test-method signature="invalidLoginTest(java.lang.String,java.lang.String)[pri:0, instance:com.OrangeHRM.test.LoginPageTest@305b7c14]" started-at="2026-06-12T15:51:06 EAT" name="invalidLoginTest" data-provider="invalidLoginData" finished-at="2026-06-12T15:51:10 EAT" duration-ms="4497" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin1234]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidLoginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.OrangeHRM.test.LoginPageTest@305b7c14]" started-at="2026-06-12T15:51:10 EAT" name="tearDown" finished-at="2026-06-12T15:51:10 EAT" duration-ms="222" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.OrangeHRM.test.LoginPageTest@305b7c14]" started-at="2026-06-12T15:51:10 EAT" name="setup" finished-at="2026-06-12T15:51:35 EAT" duration-ms="24208" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setupPages()[pri:0, instance:com.OrangeHRM.test.LoginPageTest@305b7c14]" started-at="2026-06-12T15:51:35 EAT" name="setupPages" finished-at="2026-06-12T15:51:35 EAT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupPages -->
+        <test-method signature="verifyValidLoginTest(java.lang.String,java.lang.String)[pri:0, instance:com.OrangeHRM.test.LoginPageTest@305b7c14]" started-at="2026-06-12T15:51:35 EAT" name="verifyValidLoginTest" data-provider="validLoginData" finished-at="2026-06-12T15:52:07 EAT" duration-ms="32289" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //span[text()='Admin'] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.103, chrome: {chromedriverVersion: 149.0.7827.115 (daf70f9ddee..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49860}, goog:processID: 20032, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49860/devtoo..., se:cdpVersion: 149.0.7827.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7ca1ee17a7cf0f7df1ef4a64eed6d9a3]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //span[text()='Admin'] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.103, chrome: {chromedriverVersion: 149.0.7827.115 (daf70f9ddee..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49860}, goog:processID: 20032, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49860/devtoo..., se:cdpVersion: 149.0.7827.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7ca1ee17a7cf0f7df1ef4a64eed6d9a3
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at com.OrangeHRM.actiondriver.ActionDriver.waitForElement(ActionDriver.java:47)
+at com.OrangeHRM.pages.HomePage.isAdminTabVisible(HomePage.java:25)
+at com.OrangeHRM.test.LoginPageTest.verifyValidLoginTest(LoginPageTest.java:37)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyValidLoginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.OrangeHRM.test.LoginPageTest@305b7c14]" started-at="2026-06-12T15:52:07 EAT" name="tearDown" finished-at="2026-06-12T15:52:07 EAT" duration-ms="271" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.OrangeHRM.test.LoginPageTest@305b7c14]" started-at="2026-06-12T15:52:07 EAT" name="setup" finished-at="2026-06-12T15:52:17 EAT" duration-ms="9387" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setupPages()[pri:0, instance:com.OrangeHRM.test.LoginPageTest@305b7c14]" started-at="2026-06-12T15:52:17 EAT" name="setupPages" finished-at="2026-06-12T15:52:17 EAT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupPages -->
+        <test-method signature="verifyValidLoginTest(java.lang.String,java.lang.String)[pri:0, instance:com.OrangeHRM.test.LoginPageTest@305b7c14]" started-at="2026-06-12T15:52:17 EAT" name="verifyValidLoginTest" data-provider="validLoginData" finished-at="2026-06-12T15:52:48 EAT" duration-ms="31600" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //span[text()='Admin'] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.103, chrome: {chromedriverVersion: 149.0.7827.115 (daf70f9ddee..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50555}, goog:processID: 25292, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50555/devtoo..., se:cdpVersion: 149.0.7827.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1d87cb43d36badec5d182bc6ea345ce3]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //span[text()='Admin'] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.103, chrome: {chromedriverVersion: 149.0.7827.115 (daf70f9ddee..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50555}, goog:processID: 25292, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50555/devtoo..., se:cdpVersion: 149.0.7827.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1d87cb43d36badec5d182bc6ea345ce3
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at com.OrangeHRM.actiondriver.ActionDriver.waitForElement(ActionDriver.java:47)
+at com.OrangeHRM.pages.HomePage.isAdminTabVisible(HomePage.java:25)
+at com.OrangeHRM.test.LoginPageTest.verifyValidLoginTest(LoginPageTest.java:37)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyValidLoginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.OrangeHRM.test.LoginPageTest@305b7c14]" started-at="2026-06-12T15:52:48 EAT" name="tearDown" finished-at="2026-06-12T15:52:49 EAT" duration-ms="381" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.OrangeHRM.test.LoginPageTest -->
       <class name="com.OrangeHRM.test.DummyClass">
-        <test-method is-config="true" signature="loadConfig()[pri:0, instance:com.OrangeHRM.test.DummyClass@1a677343]" started-at="2026-05-26T17:12:12 EAT" name="loadConfig" finished-at="2026-05-26T17:12:12 EAT" duration-ms="14" status="PASS">
+        <test-method is-config="true" signature="loadConfig()[pri:0, instance:com.OrangeHRM.test.DummyClass@43c1b556]" started-at="2026-06-12T15:50:15 EAT" name="loadConfig" finished-at="2026-06-12T15:50:15 EAT" duration-ms="11" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadConfig -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.OrangeHRM.test.DummyClass@1a677343]" started-at="2026-05-26T17:12:12 EAT" name="setup" finished-at="2026-05-26T17:12:21 EAT" duration-ms="9525" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.OrangeHRM.test.DummyClass@43c1b556]" started-at="2026-06-12T15:50:15 EAT" name="setup" finished-at="2026-06-12T15:50:38 EAT" duration-ms="23056" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="dummyTest()[pri:0, instance:com.OrangeHRM.test.DummyClass@1a677343]" started-at="2026-05-26T17:12:21 EAT" name="dummyTest" finished-at="2026-05-26T17:12:21 EAT" duration-ms="19" status="PASS">
+        <test-method signature="dummyTest()[pri:0, instance:com.OrangeHRM.test.DummyClass@43c1b556]" started-at="2026-06-12T15:50:38 EAT" name="dummyTest" finished-at="2026-06-12T15:50:39 EAT" duration-ms="76" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dummyTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.OrangeHRM.test.DummyClass@1a677343]" started-at="2026-05-26T17:12:21 EAT" name="tearDown" finished-at="2026-05-26T17:12:22 EAT" duration-ms="308" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.OrangeHRM.test.DummyClass@43c1b556]" started-at="2026-06-12T15:50:39 EAT" name="tearDown" finished-at="2026-06-12T15:50:39 EAT" duration-ms="179" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

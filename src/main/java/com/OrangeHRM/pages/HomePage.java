@@ -15,13 +15,14 @@ ActionDriver actionDriver;
 
 //define locators using By class
 	private By adminTab=By.xpath("//span[text()='Admin']");
-	private By userIDButton=By.cssSelector(".oxd-userdropdown-icon");
-	private By OrangeHRMlogo=By.cssSelector("img[alt='client brand banner']");
+	private By userIDButton=By.cssSelector(".oxd-userdropdown-tab");
+	private By OrangeHRMlogo=By.cssSelector("img.oxd-brand-logo");
 	private By LogoutButton=By.xpath("//a[text()='Logout']");
 	
 	//method to verify if Admin Tab is visible 
 	public boolean isAdminTabVisible() 
 	{
+		 actionDriver.waitForElement(adminTab);
 		return actionDriver.isDisplayed(adminTab);
 	}
 	

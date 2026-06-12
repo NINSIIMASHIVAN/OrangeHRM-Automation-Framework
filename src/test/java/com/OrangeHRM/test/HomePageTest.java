@@ -9,6 +9,7 @@ import com.OrangeHRM.actiondriver.ActionDriver;
 import com.OrangeHRM.base.BaseClass;
 import com.OrangeHRM.pages.HomePage;
 import com.OrangeHRM.pages.LoginPage;
+import com.OrangeHRM.utilities.DataProviders;
 
 public class HomePageTest extends BaseClass {
 private LoginPage loginPage;
@@ -23,12 +24,13 @@ private ActionDriver actionDriver;
 		    	homePage=new HomePage(getDriver());
 	}
 		  
-	@Test	  
-public void verifyOrangeHRMLogo() {
-	loginPage.login("Admin", "admin123");
+ @Test(dataProvider="validLoginData", dataProviderClass=DataProviders.class)
+	  
+public void verifyOrangeHRMLogo(String username, String password) {
+	loginPage.login(username, password);
 	 Assert.assertTrue(homePage.OrangeHRMLogo(),"logo is not visible ");
 
-
+	 homePage.logout();
 			}
 		  
 		  

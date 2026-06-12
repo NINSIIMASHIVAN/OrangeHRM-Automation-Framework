@@ -6,7 +6,6 @@
       <class name="com.OrangeHRM.test.LoginPageTest">
         <methods>
           <include name="invalidLoginTest"/>
-          <include name="verifyValidLoginTest"/>
           <include name="loadConfig"/>
           <include name="setup"/>
           <include name="tearDown"/>
