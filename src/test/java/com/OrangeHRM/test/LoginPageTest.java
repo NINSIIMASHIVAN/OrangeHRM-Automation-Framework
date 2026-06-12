@@ -40,7 +40,7 @@ public class LoginPageTest extends BaseClass{
         staticWait(2);
     }
     
-  /*  @Test(dataProvider="invalidLoginData", dataProviderClass=DataProviders.class)
+  / @Test(dataProvider="invalidLoginData", dataProviderClass=DataProviders.class)
     public void invalidLoginTest(String username, String password) 
     {
     	loginPage.login(username, password);
@@ -59,9 +59,9 @@ public class LoginPageTest extends BaseClass{
     	Assert.assertTrue(loginPage.verifyErrorMessage(expectedErrorMessage),"Test failed");
     	System.out.println("Invalid logintest passed");
     			
-}*/
+}
 
-    @Test(dataProvider="invalidLoginData", dataProviderClass=DataProviders.class) 
+    /*@Test(dataProvider="invalidLoginData", dataProviderClass=DataProviders.class) 
     public void invalidLoginTest(String username, String password) 
     {
         loginPage.login(username, password);
@@ -79,7 +79,7 @@ public class LoginPageTest extends BaseClass{
         String expectedErrorMessage = "Invalid credentials";
         Assert.assertTrue(loginPage.verifyErrorMessage(expectedErrorMessage),
             "Test failed - Expected error message not found");
-    }  
+    }  */
 
 
 
