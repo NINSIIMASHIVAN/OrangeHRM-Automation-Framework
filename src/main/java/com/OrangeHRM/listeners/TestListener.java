@@ -15,17 +15,16 @@ import org.testng.annotations.ITestAnnotation;
 
 import com.OrangeHRM.base.BaseClass;
 import com.OrangeHRM.utilities.ExtentManager;
-import com.OrangeHRM.utilities.RetryAnalyzer;
 import com.OrangeHRM.utilities.ScreenshotUtil;
 
-	public class TestListener implements ITestListener ,IAnnotationTransformer{
-//to get the unimplemented m,ethods of IAnnotationTransformer , right click on it, go to sorce and the override unimplementedmethods
+	public class TestListener implements ITestListener{ //IAnnotationTransformer{
+/*//to get the unimplemented m,ethods of IAnnotationTransformer , right click on it, go to sorce and the override unimplementedmethods
 	    @Override
 		public void transform(ITestAnnotation annotation, Class testClass, Constructor testConstructor,
 				Method testMethod) {
 			
 	annotation.setRetryAnalyzer(RetryAnalyzer.class);
-		}
+		}*/
 
 		@Override
 	    public void onStart(ITestContext context) {

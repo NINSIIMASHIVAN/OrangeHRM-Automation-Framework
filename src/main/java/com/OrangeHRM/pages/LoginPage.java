@@ -20,7 +20,7 @@ private WebDriver driver;
 private By userNamefield=By.name("username");
 private By passwordfield=By.cssSelector("input[placeholder='Password']");
 private By loginbtnfield=By.cssSelector("button[type='submit']");
-private By errormessage=By.xpath("//div[@class='oxd-alert-content oxd-alert-content--error']");
+private By errormessage=By.cssSelector(".oxd-alert-content-text");
 
 //method to perform login
 public void login(String username,String password) 

@@ -1,10 +1,20 @@
+# Maven
 target/
-test-output/
-logs/
-screenshots/
 
+# TestNG
+test-output/
+
+# Logs
+*.log
+
+# Eclipse files
 .classpath
 .project
 .settings/
 
-*.log
+# Screenshots
+screenshots/
+
+# OS files
+.DS_Store
+Thumbs.db

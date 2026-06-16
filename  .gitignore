@@ -1,0 +1,40 @@
+# Paste this content in .gitignore file
+
+# Maven
+target/
+*.jar
+*.war
+
+# Eclipse
+.classpath
+.project
+.settings/
+bin/
+.metadata/
+
+# TestNG
+test-output/
+ExtentReports.html
+
+# Selenium
+*.log
+*.png
+.cache/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.iml
+
+# Gradle
+.gradle/
+
+# Node (if using)
+node_modules/
+
+# Dependencies
+.m2/

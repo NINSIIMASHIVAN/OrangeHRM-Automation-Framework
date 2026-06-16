@@ -9,73 +9,31 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">OrangeHRMSuite</th></tr>
-<tr><td><a href="#t0">OrangeHRMTest</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num attn">5</td><td class="num">305,752</td><td></td><td></td></tr>
+<tr><td><a href="#t0">OrangeHRMTest</a></td><td class="num">6</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">235,340</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">OrangeHRMSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">OrangeHRMTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">com.OrangeHRM.test.HomePageTest</td><td><a href="#m0">verifyOrangeHRMLogo</a></td><td rowspan="2">1781268858965</td><td rowspan="2">62261</td></tr><tr class="failedeven"><td><a href="#m1">verifyOrangeHRMLogo</a></td></tr><tr class="failedodd"><td rowspan="3">com.OrangeHRM.test.LoginPageTest</td><td><a href="#m2">invalidLoginTest</a></td><td rowspan="1">1781268660102</td><td rowspan="1">10730</td></tr><tr class="failedodd"><td><a href="#m3">verifyValidLoginTest</a></td><td rowspan="2">1781268737130</td><td rowspan="2">31600</td></tr><tr class="failedodd"><td><a href="#m4">verifyValidLoginTest</a></td></tr><tr><th colspan="4">OrangeHRMTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.OrangeHRM.test.DummyClass</td><td><a href="#m5">dummyTest</a></td><td rowspan="1">1781268638999</td><td rowspan="1">76</td></tr><tr class="passedodd"><td rowspan="1">com.OrangeHRM.test.DummyClass2</td><td><a href="#m6">dummyTest</a></td><td rowspan="1">1781268659743</td><td rowspan="1">32</td></tr><tr class="passedeven"><td rowspan="1">com.OrangeHRM.test.LoginPageTest</td><td><a href="#m7">invalidLoginTest</a></td><td rowspan="1">1781268666109</td><td rowspan="1">4497</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">OrangeHRMSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">OrangeHRMTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">com.OrangeHRM.test.LoginPageTest</td><td><a href="#m0">verifyValidLoginTest</a></td><td rowspan="2">1781616038161</td><td rowspan="2">16928</td></tr><tr class="failedeven"><td><a href="#m1">verifyValidLoginTest</a></td></tr><tr><th colspan="4">OrangeHRMTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.OrangeHRM.test.DummyClass</td><td><a href="#m2">dummyTest</a></td><td rowspan="1">1781615933326</td><td rowspan="1">50</td></tr><tr class="passedodd"><td rowspan="1">com.OrangeHRM.test.DummyClass2</td><td><a href="#m3">dummyTest</a></td><td rowspan="1">1781615957767</td><td rowspan="1">19</td></tr><tr class="passedeven"><td rowspan="2">com.OrangeHRM.test.HomePageTest</td><td><a href="#m4">verifyOrangeHRMLogo</a></td><td rowspan="2">1781616142095</td><td rowspan="2">4740</td></tr><tr class="passedeven"><td><a href="#m5">verifyOrangeHRMLogo</a></td></tr><tr class="passedodd"><td rowspan="2">com.OrangeHRM.test.LoginPageTest</td><td><a href="#m6">verifyInvalidLoginTest</a></td><td rowspan="2">1781616013082</td><td rowspan="2">3393</td></tr><tr class="passedodd"><td><a href="#m7">verifyInvalidLoginTest</a></td></tr></tbody>
 </table>
-<h2>OrangeHRMTest</h2><h3 id="m0">com.OrangeHRM.test.HomePageTest#verifyOrangeHRMLogo</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>Admin</td><td>admin123</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: logo is not visible  expected [true] but found [false]
-	at com.OrangeHRM.test.HomePageTest.verifyOrangeHRMLogo(HomePageTest.java:31)
+<h2>OrangeHRMTest</h2><h3 id="m0">com.OrangeHRM.test.LoginPageTest#verifyValidLoginTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>Admin</td><td>admin123</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: Admin tab should be visible after a successful login expected [true] but found [false]
+	at com.OrangeHRM.test.LoginPageTest.verifyValidLoginTest(LoginPageTest.java:53)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
 ... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.OrangeHRM.test.HomePageTest#verifyOrangeHRMLogo</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>Admin</td><td>admin123</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: logo is not visible  expected [true] but found [false]
-	at com.OrangeHRM.test.HomePageTest.verifyOrangeHRMLogo(HomePageTest.java:31)
+<h3 id="m1">com.OrangeHRM.test.LoginPageTest#verifyValidLoginTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>Admin</td><td>admin123</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: Admin tab should be visible after a successful login expected [true] but found [false]
+	at com.OrangeHRM.test.LoginPageTest.verifyValidLoginTest(LoginPageTest.java:53)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
 ... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.OrangeHRM.test.LoginPageTest#invalidLoginTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.internal.reflect.MethodMatcherException: 
-[public void com.OrangeHRM.test.LoginPageTest.invalidLoginTest(java.lang.String,java.lang.String)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
-Data provider mismatch
-Method: invalidLoginTest([java.lang.String arg0, java.lang.String arg1])
-Arguments: [(java.lang.String) invalidLoginData]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 12 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.OrangeHRM.test.LoginPageTest#verifyValidLoginTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>Admin</td><td>admin123</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //span[text()=&apos;Admin&apos;] (tried for 30 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.103, chrome: {chromedriverVersion: 149.0.7827.115 (daf70f9ddee..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50555}, goog:processID: 25292, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50555/devtoo..., se:cdpVersion: 149.0.7827.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1d87cb43d36badec5d182bc6ea345ce3
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at com.OrangeHRM.actiondriver.ActionDriver.waitForElement(ActionDriver.java:47)
-	at com.OrangeHRM.pages.HomePage.isAdminTabVisible(HomePage.java:25)
-	at com.OrangeHRM.test.LoginPageTest.verifyValidLoginTest(LoginPageTest.java:37)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">com.OrangeHRM.test.LoginPageTest#verifyValidLoginTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>Admin</td><td>admin123</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //span[text()=&apos;Admin&apos;] (tried for 30 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.103, chrome: {chromedriverVersion: 149.0.7827.115 (daf70f9ddee..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49860}, goog:processID: 20032, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49860/devtoo..., se:cdpVersion: 149.0.7827.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 7ca1ee17a7cf0f7df1ef4a64eed6d9a3
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at com.OrangeHRM.actiondriver.ActionDriver.waitForElement(ActionDriver.java:47)
-	at com.OrangeHRM.pages.HomePage.isAdminTabVisible(HomePage.java:25)
-	at com.OrangeHRM.test.LoginPageTest.verifyValidLoginTest(LoginPageTest.java:37)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">com.OrangeHRM.test.DummyClass#dummyTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">com.OrangeHRM.test.DummyClass2#dummyTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">com.OrangeHRM.test.LoginPageTest#invalidLoginTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>admin1</td><td>admin1234</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.OrangeHRM.test.DummyClass#dummyTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.OrangeHRM.test.DummyClass2#dummyTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.OrangeHRM.test.HomePageTest#verifyOrangeHRMLogo</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>Admin</td><td>admin123</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.OrangeHRM.test.HomePageTest#verifyOrangeHRMLogo</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>Admin</td><td>admin123</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.OrangeHRM.test.LoginPageTest#verifyInvalidLoginTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>wronguse</td><td>wrong pasi</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.OrangeHRM.test.LoginPageTest#verifyInvalidLoginTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>wrong User</td><td>wrongPas</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

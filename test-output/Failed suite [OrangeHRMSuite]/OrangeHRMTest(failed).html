@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Jun 04 19:04:33 EAT 2026</td>
+<td>Started on:</td><td>Mon Jun 15 12:18:19 EAT 2026</td>
 </tr>
-<tr><td>Total time:</td><td>15 seconds (15181 ms)</td>
+<tr><td>Total time:</td><td>30 seconds (30729 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,22 +76,22 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.OrangeHRM.test.LoginPageTest.invalidLoginTest()'><b>invalidLoginTest</b><br>Test class: com.OrangeHRM.test.LoginPageTest</td>
+<td title='com.OrangeHRM.test.LoginPageTest.verifyInvalidLoginTest()'><b>verifyInvalidLoginTest</b><br>Test class: com.OrangeHRM.test.LoginPageTest</td>
 <td><div><pre>org.testng.internal.reflect.MethodMatcherException: 
-[public void com.OrangeHRM.test.LoginPageTest.invalidLoginTest(java.lang.String,java.lang.String)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
+[public void com.OrangeHRM.test.LoginPageTest.verifyInvalidLoginTest(java.lang.String,java.lang.String)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
 Data provider mismatch
-Method: invalidLoginTest([java.lang.String arg0, java.lang.String arg1])
+Method: verifyInvalidLoginTest([java.lang.String arg0, java.lang.String arg1])
 Arguments: [(java.lang.String) invalidLoginData]
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 8 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace462881706", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace462881706'><pre>org.testng.internal.reflect.MethodMatcherException: 
-[public void com.OrangeHRM.test.LoginPageTest.invalidLoginTest(java.lang.String,java.lang.String)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1262398669", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1262398669'><pre>org.testng.internal.reflect.MethodMatcherException: 
+[public void com.OrangeHRM.test.LoginPageTest.verifyInvalidLoginTest(java.lang.String,java.lang.String)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
 Data provider mismatch
-Method: invalidLoginTest([java.lang.String arg0, java.lang.String arg1])
+Method: verifyInvalidLoginTest([java.lang.String arg0, java.lang.String arg1])
 Arguments: [(java.lang.String) invalidLoginData]
 	at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:46)
 	at org.testng.internal.Parameters.injectParameters(Parameters.java:915)
@@ -100,15 +100,19 @@ Arguments: [(java.lang.String) invalidLoginData]
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
 </pre></div></td>
-<td>14</td>
-<td>com.OrangeHRM.test.LoginPageTest@4c178a76</td></tr>
+<td>30</td>
+<td>com.OrangeHRM.test.LoginPageTest@587e5365</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -119,10 +123,10 @@ Arguments: [(java.lang.String) invalidLoginData]
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.OrangeHRM.test.LoginPageTest.invalidLoginTest()'><b>invalidLoginTest</b><br>Test class: com.OrangeHRM.test.LoginPageTest<br>Parameters: admin1, admin1234</td>
+<td title='com.OrangeHRM.test.LoginPageTest.verifyInvalidLoginTest()'><b>verifyInvalidLoginTest</b><br>Test class: com.OrangeHRM.test.LoginPageTest<br>Parameters: admin1, admin1234</td>
 <td></td>
-<td>1</td>
-<td>com.OrangeHRM.test.LoginPageTest@4c178a76</td></tr>
+<td>11</td>
+<td>com.OrangeHRM.test.LoginPageTest@587e5365</td></tr>
 </table><p>
 </body>
 </html>

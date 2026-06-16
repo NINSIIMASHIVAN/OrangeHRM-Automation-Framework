@@ -34,11 +34,12 @@ public class ExcelReaderUtility {
 			}
 		//Read all cells in the row
 			List<String> rowData=new ArrayList<>();
-			for(Cell cell:row) 
+			for(Cell cell : row) 
 			{
 				rowData.add(getCellValue(cell));
 			}
 			//convert rowData to String[]
+			 if (rowData.isEmpty() || rowData.stream().allMatch(String::isEmpty)) continue;
 			data.add(rowData.toArray(new String[0]));
 		}
 		
@@ -73,4 +74,5 @@ catch(IOException e)
 		}
 	}
 
+	
 }

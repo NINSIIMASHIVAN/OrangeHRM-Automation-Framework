@@ -2,6 +2,12 @@ package com.OrangeHRM.test;
 
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
+
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
@@ -31,56 +37,37 @@ public class LoginPageTest extends BaseClass{
     public void verifyValidLoginTest(String username, String password) 
     {
     	loginPage.login(username,password);
+    	
+    	getActionDriver().waitForPageToLoad();
+        Assert.assertTrue(homePage.OrangeHRMLogo(), "logo is not visible");
+    	
+    	System.out.println("Current URL = " + getDriver().getCurrentUrl());
+    	System.out.println("Page title = " + getDriver().getTitle());
     	System.out.println(getDriver().getCurrentUrl());
     	System.out.println("Page Title = " + getDriver().getTitle());
 
+    	System.out.println("Username = [" + username + "]");
+    	System.out.println("Password = [" + password + "]");
+    	
+    	
     	Assert.assertTrue(homePage.isAdminTabVisible(),"Admin tab should be visible after a successful login");
         homePage.logout();
         System.out.println("Logged out successfully");
         staticWait(2);
     }
-    
-  / @Test(dataProvider="invalidLoginData", dataProviderClass=DataProviders.class)
-    public void invalidLoginTest(String username, String password) 
-    {
-    	loginPage.login(username, password);
-    	//wait for error message to appear
-    	//getActionDriver().waitForPageToLoad();
-    	Assert.assertTrue(loginPage.isErrorMessageDisplayed());
-    	String expectedErrorMessage= "Invalid credentials";
-    	
-    	 boolean isErrorPresent = loginPage.isErrorMessageDisplayed();
-    	    System.out.println("Error message displayed: " + isErrorPresent);
-    	    
-    	    if(isErrorPresent) {
-    	        String actualError = loginPage.getErrorMessageText();
-    	        System.out.println("Actual error message: " + actualError);
-    	    }
-    	Assert.assertTrue(loginPage.verifyErrorMessage(expectedErrorMessage),"Test failed");
-    	System.out.println("Invalid logintest passed");
-    			
-}
-
-    /*@Test(dataProvider="invalidLoginData", dataProviderClass=DataProviders.class) 
-    public void invalidLoginTest(String username, String password) 
-    {
+    @Test(dataProvider="invalidLoginData", dataProviderClass=DataProviders.class)
+    public void verifyInvalidLoginTest(String username, String password) {
         loginPage.login(username, password);
-        getActionDriver().waitForPageToLoad();
         
-        // Debug: Print what we actually get
-        if(loginPage.isErrorMessageDisplayed()) {
-            String actualError = loginPage.getErrorMessageText();
-            System.out.println("===== ACTUAL ERROR MESSAGE: '" + actualError + "' =====");
-        } else {
-            System.out.println("===== NO ERROR MESSAGE DISPLAYED =====");
-            System.out.println("===== CURRENT URL: " + getDriver().getCurrentUrl() + " =====");
-        }
+        WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(
+            By.cssSelector(".oxd-alert-content-text")  
+        ));
         
+        Assert.assertTrue(loginPage.isErrorMessageDisplayed());
         String expectedErrorMessage = "Invalid credentials";
-        Assert.assertTrue(loginPage.verifyErrorMessage(expectedErrorMessage),
-            "Test failed - Expected error message not found");
-    }  */
-
-
-
+        Assert.assertTrue(loginPage.verifyErrorMessage(expectedErrorMessage), "Test failed");
+        System.out.println("Invalid login test passed");
+    }
+ 
 }
