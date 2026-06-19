@@ -1,10 +1,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>myRevisedFrameWorks</groupId>
-  <artifactId>myRevisedFrameWorks</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  <name>myFrameWorks </name>
+  <groupId>com.OrangeHRM</groupId>
+<artifactId>completeFrameworkByAutomationInsider</artifactId>
+<version>0.0.1-SNAPSHOT</version>
+<name>completeFrameworkByAutomationInsider</name>
     <dependencies>
     <!-- Selenium -->
 <dependency>
@@ -12,10 +12,6 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <artifactId>selenium-java</artifactId>
     <version>4.33.0</version>
 </dependency>
-
-
-
-
 
 <!--WebDriverManager dependency -->
 <dependency>
@@ -82,7 +78,7 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
                 <!-- Point to your TestNG suite -->
                 <suiteXmlFiles>
-                    <suiteXmlFile>\src\test\resources\testng.xml</suiteXmlFile>
+                   <suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>
                 </suiteXmlFiles>
 
                 <!-- Useful for Java 21 -->

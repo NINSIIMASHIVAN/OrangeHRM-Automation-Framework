@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>6/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Jun 16 16:18:33 EAT 2026</td>
+<td>Started on:</td><td>Thu Jun 18 18:36:37 EAT 2026</td>
 </tr>
-<tr><td>Total time:</td><td>235 seconds (235340 ms)</td>
+<tr><td>Total time:</td><td>129 seconds (129269 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -77,19 +77,30 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.OrangeHRM.test.LoginPageTest.verifyValidLoginTest()'><b>verifyValidLoginTest</b><br>Test class: com.OrangeHRM.test.LoginPageTest<br>Parameters: Admin, admin123</td>
-<td><div><pre>java.lang.AssertionError: Admin tab should be visible after a successful login expected [true] but found [false]
-	at com.OrangeHRM.test.LoginPageTest.verifyValidLoginTest(LoginPageTest.java:53)
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: .oxd-main-menu (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.116, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55817}, goog:processID: 24440, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55817/devtoo..., se:cdpVersion: 149.0.7827.116, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e127c8df78d5648206efa817cfc18d3d
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.OrangeHRM.test.LoginPageTest.verifyValidLoginTest(LoginPageTest.java:69)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace264021330", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace264021330'><pre>java.lang.AssertionError: Admin tab should be visible after a successful login expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1590)
-	at org.testng.Assert.assertTrue(Assert.java:57)
-	at com.OrangeHRM.test.LoginPageTest.verifyValidLoginTest(LoginPageTest.java:53)
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1827529631", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1827529631'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: .oxd-main-menu (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.116, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55817}, goog:processID: 24440, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55817/devtoo..., se:cdpVersion: 149.0.7827.116, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e127c8df78d5648206efa817cfc18d3d
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.OrangeHRM.test.LoginPageTest.verifyValidLoginTest(LoginPageTest.java:69)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -111,23 +122,34 @@ function toggleAllBoxes() {
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
 </pre></div></td>
-<td>16</td>
+<td>28</td>
 <td>com.OrangeHRM.test.LoginPageTest@66d18979</td></tr>
 <tr>
 <td title='com.OrangeHRM.test.LoginPageTest.verifyValidLoginTest()'><b>verifyValidLoginTest</b><br>Test class: com.OrangeHRM.test.LoginPageTest<br>Parameters: Admin, admin123</td>
-<td><div><pre>java.lang.AssertionError: Admin tab should be visible after a successful login expected [true] but found [false]
-	at com.OrangeHRM.test.LoginPageTest.verifyValidLoginTest(LoginPageTest.java:53)
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: .oxd-main-menu (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.116, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63391}, goog:processID: 4720, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63391/devtoo..., se:cdpVersion: 149.0.7827.116, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e79020853fea29ed9c95b76ef6801409
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.OrangeHRM.test.LoginPageTest.verifyValidLoginTest(LoginPageTest.java:69)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1637618915", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1637618915'><pre>java.lang.AssertionError: Admin tab should be visible after a successful login expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1590)
-	at org.testng.Assert.assertTrue(Assert.java:57)
-	at com.OrangeHRM.test.LoginPageTest.verifyValidLoginTest(LoginPageTest.java:53)
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace534578531", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace534578531'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: .oxd-main-menu (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.116, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63391}, goog:processID: 4720, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63391/devtoo..., se:cdpVersion: 149.0.7827.116, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e79020853fea29ed9c95b76ef6801409
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.OrangeHRM.test.LoginPageTest.verifyValidLoginTest(LoginPageTest.java:69)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -149,7 +171,7 @@ function toggleAllBoxes() {
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
 </pre></div></td>
-<td>17</td>
+<td>21</td>
 <td>com.OrangeHRM.test.LoginPageTest@66d18979</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
@@ -161,15 +183,20 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='com.OrangeHRM.test.LoginPageTest.verifyInvalidLoginTest()'><b>verifyInvalidLoginTest</b><br>Test class: com.OrangeHRM.test.LoginPageTest<br>Parameters: wrong User, wrongPas</td>
+<td></td>
+<td>1</td>
+<td>com.OrangeHRM.test.LoginPageTest@66d18979</td></tr>
+<tr>
 <td title='com.OrangeHRM.test.HomePageTest.verifyOrangeHRMLogo()'><b>verifyOrangeHRMLogo</b><br>Test class: com.OrangeHRM.test.HomePageTest<br>Parameters: Admin, admin123</td>
 <td></td>
-<td>4</td>
+<td>2</td>
 <td>com.OrangeHRM.test.HomePageTest@1f59a598</td></tr>
 <tr>
-<td title='com.OrangeHRM.test.DummyClass.dummyTest()'><b>dummyTest</b><br>Test class: com.OrangeHRM.test.DummyClass</td>
+<td title='com.OrangeHRM.test.HomePageTest.verifyOrangeHRMLogo()'><b>verifyOrangeHRMLogo</b><br>Test class: com.OrangeHRM.test.HomePageTest<br>Parameters: Admin, admin123</td>
 <td></td>
-<td>0</td>
-<td>com.OrangeHRM.test.DummyClass@22fcf7ab</td></tr>
+<td>6</td>
+<td>com.OrangeHRM.test.HomePageTest@1f59a598</td></tr>
 <tr>
 <td title='com.OrangeHRM.test.DummyClass2.dummyTest()'><b>dummyTest</b><br>Test class: com.OrangeHRM.test.DummyClass2</td>
 <td></td>
@@ -178,18 +205,13 @@ function toggleAllBoxes() {
 <tr>
 <td title='com.OrangeHRM.test.LoginPageTest.verifyInvalidLoginTest()'><b>verifyInvalidLoginTest</b><br>Test class: com.OrangeHRM.test.LoginPageTest<br>Parameters: wronguse, wrong pasi</td>
 <td></td>
-<td>3</td>
+<td>1</td>
 <td>com.OrangeHRM.test.LoginPageTest@66d18979</td></tr>
 <tr>
-<td title='com.OrangeHRM.test.HomePageTest.verifyOrangeHRMLogo()'><b>verifyOrangeHRMLogo</b><br>Test class: com.OrangeHRM.test.HomePageTest<br>Parameters: Admin, admin123</td>
+<td title='com.OrangeHRM.test.DummyClass.dummyTest()'><b>dummyTest</b><br>Test class: com.OrangeHRM.test.DummyClass</td>
 <td></td>
-<td>4</td>
-<td>com.OrangeHRM.test.HomePageTest@1f59a598</td></tr>
-<tr>
-<td title='com.OrangeHRM.test.LoginPageTest.verifyInvalidLoginTest()'><b>verifyInvalidLoginTest</b><br>Test class: com.OrangeHRM.test.LoginPageTest<br>Parameters: wrong User, wrongPas</td>
-<td></td>
-<td>2</td>
-<td>com.OrangeHRM.test.LoginPageTest@66d18979</td></tr>
+<td>0</td>
+<td>com.OrangeHRM.test.DummyClass@22fcf7ab</td></tr>
 </table><p>
 </body>
 </html>

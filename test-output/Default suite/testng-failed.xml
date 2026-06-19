@@ -5,7 +5,7 @@
     <classes>
       <class name="com.OrangeHRM.test.LoginPageTest">
         <methods>
-          <include name="invalidLoginTest"/>
+          <include name="verifyValidLoginTest" invocation-numbers="0 1"/>
           <include name="loadConfig"/>
           <include name="setup"/>
           <include name="tearDown"/>

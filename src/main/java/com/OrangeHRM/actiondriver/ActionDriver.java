@@ -113,7 +113,7 @@ public class ActionDriver {
 	    }
 	
 	//method to check if an element is displayed
-	public boolean isDisplayed(By by) 
+public boolean isDisplayed(By by) 
 	{
 		try 
 	{ 
@@ -128,6 +128,8 @@ public class ActionDriver {
 		} 
 		return false;
 		}
+	
+	
 	
 
    
