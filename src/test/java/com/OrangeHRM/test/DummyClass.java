@@ -13,7 +13,7 @@ public class DummyClass extends BaseClass {
 		String tittle = getDriver().getTitle();
 		Assert.assertEquals(tittle, "OrangeHRM",
 		        "Title is not matching");
-	
-	System.out.println("Test Passed-Tittle is matching");
+	//printing the status of the test case,//testing jenkins 
+		System.out.println("Test Passed-Tittle is matching");
 	}
 }
