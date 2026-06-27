@@ -5,13 +5,14 @@
 This project is a scalable Selenium Automation Framework developed using Java, TestNG, Maven, and Page Object Model (POM) architecture for testing the OrangeHRM application.
 
 The framework supports:
-
+* Page Object Model
 * Cross-browser testing
 * Parallel execution
 * Thread-safe WebDriver management
 * Extent Reports integration
 * Reusable utilities and components
 * Configurable execution using properties files
+* Jenkins CI/CD integration
 
 ---
 
@@ -131,7 +132,7 @@ from Eclipse or IntelliJ.
 
 ## Future Improvements
 
-* Jenkins CI/CD integration
+
 * Selenium Grid execution
 * Docker containerization
 * REST Assured API integration
