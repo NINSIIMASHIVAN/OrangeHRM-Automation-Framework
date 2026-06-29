@@ -2,12 +2,24 @@
 
 A Selenium WebDriver + Java test automation framework built for the [OrangeHRM demo application](https://opensource-demo.orangehrmlive.com/), with Page Object Model architecture, cross-browser support, parallel execution, Maven build management, and a working Jenkins CI/CD pipeline.
 
+
 ![Build Status](https://img.shields.io/badge/build-passing-brightgreen)
 ![Java](https://img.shields.io/badge/Java-21-orange)
 ![Selenium](https://img.shields.io/badge/Selenium-4.33.0-green)
 ![TestNG](https://img.shields.io/badge/TestNG-7.11.0-blue)
 
----
+This project is a scalable Selenium Automation Framework developed using Java, TestNG, Maven, and Page Object Model (POM) architecture for testing the OrangeHRM application.
+
+The framework supports:
+* Page Object Model
+* Cross-browser testing
+* Parallel execution
+* Thread-safe WebDriver management
+* Extent Reports integration
+* Reusable utilities and components
+* Configurable execution using properties files
+* Jenkins CI/CD integration
+
 
 ## Overview
 
@@ -140,8 +152,17 @@ This framework currently demonstrates login/dashboard/logout coverage and a work
 
 ## Known Limitations
 
+
 - Jenkinsfile currently uses Windows `bat` steps; will not run as-is on a Linux Jenkins agent
 - Test coverage is currently limited to authentication and dashboard flows; broader business-workflow coverage is in progress (see Roadmap)
+
+
+* Selenium Grid execution
+* Docker containerization
+* REST Assured API integration
+* Database validation
+* Cloud execution using BrowserStack/Sauce Labs
+ 4e1925c6e78222c845edd75d262f291551738a25
 
 ---
 
