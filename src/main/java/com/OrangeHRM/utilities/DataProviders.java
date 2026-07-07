@@ -23,6 +23,16 @@ public static Object[][] invalidLoginData()throws IOException
 {
 	return getSheetData("invalidLoginData");
 }
+@DataProvider(name="addEmployeeData")
+public static Object[][] addEmployeeData()throws IOException
+{
+	return getSheetData("addEmployeeData");
+}
+
+@DataProvider(name = "claimData")
+public static Object[][] claimData() {
+    return getSheetData("claimData");
+}
 
 /*private static Object[][] getSheetData(String sheetName) {
     List<String[]> sheetData = ExcelReaderUtility.getSheetData(FILE_PATH, sheetName);

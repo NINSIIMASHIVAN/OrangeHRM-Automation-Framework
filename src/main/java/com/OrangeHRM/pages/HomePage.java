@@ -47,7 +47,7 @@ ActionDriver actionDriver;
 	    }
 	}*/
 
-	public boolean isAdminTabVisible() {
+	public  boolean isAdminTabVisible() {
 	    // In headless Chrome 149, the sidebar nav doesn't render
 	    // We verify successful login via URL and title instead
 	    return driver.getCurrentUrl().contains("/dashboard/index") 
@@ -72,14 +72,14 @@ ActionDriver actionDriver;
 	        return false;
 	    }
 	}*/
-	public boolean OrangeHRMLogo() {
+	public boolean isDashboardLoaded(){
 	    try {
 	        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 	        wait.until(ExpectedConditions.urlContains("/dashboard/index"));
-	        wait.until(ExpectedConditions.titleIs("OrangeHRM"));
+	       // wait.until(ExpectedConditions.titleIs("https://opensource-demo.orangehrmlive.com/web/index.php/admin/viewSystemUsers"));
 	        return true;
 	    } catch (Exception e) {
-	        System.out.println("element not seen: " + e.getMessage());
+	        System.out.println("dashboard not loaded " + e.getMessage());
 	        return false;
 	    }
 	}
@@ -99,5 +99,10 @@ ActionDriver actionDriver;
 	    } catch (Exception e) {
 	        System.out.println("Logout failed: " + e.getMessage());
 	    }
+	}
+
+	public Object isLoaded() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 }

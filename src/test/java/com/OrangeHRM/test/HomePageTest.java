@@ -1,6 +1,10 @@
 package com.OrangeHRM.test;
 
+import java.time.Duration;
+
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -26,9 +30,11 @@ private ActionDriver actionDriver;
 		  
  @Test(dataProvider="validLoginData", dataProviderClass=DataProviders.class)
 	  
-public void verifyOrangeHRMLogo(String username, String password) {
+public void verifyDashboardIsDisplayed(String username, String password) {
 	loginPage.login(username, password);
-	 Assert.assertTrue(homePage.OrangeHRMLogo(),"logo is not visible ");
+	 WebDriverWait wait= new WebDriverWait(getDriver(), Duration.ofSeconds(10));
+     wait.until(ExpectedConditions.urlContains("/dashboard/index"));
+	 Assert.assertTrue(homePage.isDashboardLoaded(),"dashboard is not loaded");
 
 	 homePage.logout();
 			}

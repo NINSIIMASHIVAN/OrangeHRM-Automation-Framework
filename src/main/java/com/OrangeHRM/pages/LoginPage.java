@@ -1,7 +1,11 @@
 package com.OrangeHRM.pages;
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.OrangeHRM.actiondriver.ActionDriver;
 import com.OrangeHRM.base.BaseClass;
@@ -21,7 +25,6 @@ private By userNamefield=By.name("username");
 private By passwordfield=By.cssSelector("input[placeholder='Password']");
 private By loginbtnfield=By.cssSelector("button[type='submit']");
 private By errormessage=By.cssSelector(".oxd-alert-content-text");
-
 //method to perform login
 public void login(String username,String password) 
 {
@@ -30,12 +33,14 @@ actionDriver.enterText(passwordfield, password);
 actionDriver.click(loginbtnfield);
 
 actionDriver.waitForPageToLoad();
-
+ 
 //create a wait specifically for the dashboard.
 //By adminTab =By.xpath("//span[text()='Admin']");
 //actionDriver.waitForElement(By.xpath("//span[text()='Admin']"));
-System.out.println(driver.getCurrentUrl());
+//System.out.println(driver.getCurrentUrl());
 }
+
+
 
 //method to check if error message is displayed
 public boolean isErrorMessageDisplayed() 

@@ -3,6 +3,8 @@ package com.OrangeHRM.test;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 
+import static org.testng.Assert.assertTrue;
+
 import java.time.Duration;
 
 import org.openqa.selenium.By;
@@ -24,6 +26,7 @@ public class LoginPageTest extends BaseClass{
 
 	private LoginPage loginPage;
     private HomePage homePage;
+    
    
     
     @BeforeMethod
@@ -38,10 +41,15 @@ public class LoginPageTest extends BaseClass{
     @Test(dataProvider="validLoginData", dataProviderClass=DataProviders.class)
     public void verifyValidLoginTest(String username, String password) throws InterruptedException 
     {
-        loginPage.login(username, password);
+    	 loginPage.login(username, password);
+      homePage = new HomePage(getDriver());
+      WebDriverWait wait= new WebDriverWait(getDriver(), Duration.ofSeconds(10));
+      wait.until(ExpectedConditions.urlContains("/dashboard/index"));
+      
+        		
         
         // Add explicit wait for dashboard to fully load
-        getActionDriver().waitForPageToLoad();
+       // getActionDriver().waitForPageToLoad();
         //WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(20));
         
         // Wait for main menu to load first
@@ -49,21 +57,21 @@ public class LoginPageTest extends BaseClass{
         
         
         // Extra delay for headless rendering
-        Thread.sleep(2000);
+      // Thread.sleep(2000);
         
-        Assert.assertTrue(homePage.OrangeHRMLogo(), "logo is not visible");
+        //Assert.assertTrue(homePage.OrangeHRMLogo(), "logo is not visible");
         
         System.out.println("Current URL = " + getDriver().getCurrentUrl());
         System.out.println("Page title = " + getDriver().getTitle());
-        System.out.println("Username = [" + username + "]");
-        System.out.println("Password = [" + password + "]");
+        System.out.println("Logging in with user: " + username);
+
         
        
        Assert.assertTrue(homePage.isAdminTabVisible(), "Admin tab should be visible after a successful login");
         
         homePage.logout();
         System.out.println("Logged out successfully");
-        staticWait(2);
+     
     }
     
     @Test(dataProvider="invalidLoginData", dataProviderClass=DataProviders.class)

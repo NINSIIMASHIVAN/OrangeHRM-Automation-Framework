@@ -10,13 +10,17 @@ import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.LockSupport;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
@@ -94,41 +98,37 @@ System.out.println("ActionDriver instance is created");
 
 		String browser = prop.getProperty("browser");
 
-		 if(browser.equalsIgnoreCase("chrome")) {
-		        WebDriverManager.chromedriver().setup();
-		        ChromeOptions options = new ChromeOptions();
-		        
-		        if (Boolean.parseBoolean(prop.getProperty("headless"))) {
-		            options.addArguments("--headless=new");
-		            // FIX: Add these for headless compatibility
-		            options.addArguments("--force-renderer-accessibility");
-		            options.addArguments("--enable-automation=false");
-		            options.addArguments("--disable-blink-features=AutomationControlled");
-		        }
-		        
-		        options.addArguments("--window-size=1920,1080");
-		        options.addArguments("--no-sandbox");
-		        options.addArguments("--disable-dev-shm-usage");
-		        options.addArguments("--disable-notifications");
-		        options.addArguments("--disable-popup-blocking");
-		        options.addArguments("--start-maximized");
-		        options.addArguments("--ignore-certificate-errors");
-		        options.addArguments("--disable-extensions");
-		       // options.addArguments("--incognito");
-		        
-		        // Enable JavaScript execution
-		        options.addArguments("--enable-javascript");
-
-		        Map<String, Object> prefs = new HashMap<>();
-		        prefs.put("credentials_enable_service", false);
-		        prefs.put("profile.password_manager_enabled", false);
-		        prefs.put("profile.password_manager_leak_detection", false);
-		        options.setExperimentalOption("prefs", prefs);
-
-		        driver.set(new ChromeDriver(options));
-		    }
+		if(browser.equalsIgnoreCase("chrome")) {
+/*WebDriverManager.chromedriver().setup();
+driver.set(new ChromeDriver());*/
 			
-			  
+			    WebDriverManager.chromedriver().setup();
+			    ChromeOptions options = new ChromeOptions();
+			    //options.addArguments("--headless=new");//options.addArguments("--headless=new");
+			    if (Boolean.parseBoolean(prop.getProperty("headless"))) {
+			        options.addArguments("--headless=new");
+			    }
+			    options.addArguments("--window-size=1920,1080");
+			    options.addArguments("--no-sandbox");
+			    options.addArguments("--disable-dev-shm-usage");
+			    options.addArguments("--disable-notifications");
+			    options.addArguments("--disable-popup-blocking");
+			    options.addArguments("--start-maximized");
+			    options.addArguments("--ignore-certificate-errors");
+			    options.addArguments("--disable-extensions");
+			   // options.addArguments("--incognito");
+
+			    // Disable password manager and breach detection popup
+			    Map<String, Object> prefs = new HashMap<>();
+			    prefs.put("credentials_enable_service", false);
+			    prefs.put("profile.password_manager_enabled", false);
+			    prefs.put("profile.password_manager_leak_detection", false);
+			    prefs.put("safebrowsing.enabled", false);
+			    options.addArguments("--disable-save-password-bubble");
+			    options.setExperimentalOption("prefs", prefs);
+
+			    driver.set(new ChromeDriver(options));
+			}
 
 		else if(browser.equalsIgnoreCase("firefox")) {
 
@@ -205,6 +205,8 @@ driver.set(new FirefoxDriver(options));
 		System.out.println("Failed to Navigate to the URL:"+e.getMessage());
 	}
 	}
+	
+
 	@AfterMethod
 
 	//terminating the browser

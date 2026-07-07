@@ -2,9 +2,9 @@
 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.OrangeHRM</groupId>
-<artifactId>completeFrameworkByAutomationInsider</artifactId>
+<artifactId>orangehrm-automation-framework</artifactId>
 <version>0.0.1-SNAPSHOT</version>
-<name>completeFrameworkByAutomationInsider</name>
+<name>orangehrm-automation-framework</name>
     <dependencies>
     <!-- Selenium -->
 <dependency>
