@@ -23,17 +23,17 @@ The framework supports:
 
 ## Overview
 
-This framework automates regression testing for OrangeHRM's login, dashboard, and logout flows, with a structure designed to scale toward broader HR module coverage (Admin, PIM, Leave Management).
+This framework automates regression testing for OrangeHRM's login, dashboard, and logout flows,Claims management, with a structure designed to scale toward broader HR module coverage (Admin, PIM, Leave Management).
 
 **Current test coverage:**
 - Valid login
 - Invalid login (data-driven, multiple credential sets)
 - Dashboard load verification
 - Logout flow
+-Claims Management
+-Creation of Employee  
 
-**In progress / next milestones:** Admin user management, PIM employee management, Leave management, and role-based access control tests — see [Roadmap](#roadmap) below.
 
----
 
 ## Tech Stack
 
@@ -134,37 +134,27 @@ See [`Jenkinsfile`](./Jenkinsfile) for the full pipeline definition.
 
 *(Screenshots show an actual local run: Chrome/Firefox/Edge execution, a passing Jenkins console output, and the automated build-status email.)*
 
----
 
-## Roadmap
-
-This framework currently demonstrates login/dashboard/logout coverage and a working CI/CD pipeline. Planned next additions:
-
-- [ ] Admin module — create user, duplicate username validation, search/disable user
-- [ ] PIM module — add employee, required field validation, search/edit employee
-- [ ] Leave module — apply for leave, invalid date range, approval/rejection flow
-- [ ] Role-based access control tests (Admin vs. regular user permissions)
-- [ ] Expanded negative/data-driven test cases (blank fields, special characters, long strings)
-- [ ] GitHub Actions workflow as a second, more portable CI/CD pipeline alongside Jenkins
-- [ ] OS-aware Jenkinsfile (currently Windows-only via `bat`; Linux agents need `sh`)
-
----
 
 ## Known Limitations
+-Shared Public Test Environment
+
+This framework was developed using the public OrangeHRM demo application, which is accessible to users worldwide. Since the environment is shared, test data created during one execution (such as employees, usernames, and other records) may be modified or deleted by other users at any time.
+
+As a result:
+
+Test data cannot be assumed to persist between executions.
+Some test cases require recreating prerequisite data before they can be executed successfully.
+Automated tests that depend on previously created employees or users may fail due to external changes rather than defects in the framework or application.
+During development, tests such as Claims Assignment depended on employees created in previous test runs. Because other users could delete these employees from the shared demo environment, I often had to verify whether the required test data still existed or recreate it before executing the tests. This experience highlighted the importance of test data management and test independence in automation frameworks.
+
+Lessons Learned
+
+This project reinforced the importance of designing automated tests that are independent, repeatable, and resilient to changing test data. It also highlighted the value of test data management strategies, such as generating unique data, using dedicated test environments, or automating test data setup and cleanup.
 
 
 - Jenkinsfile currently uses Windows `bat` steps; will not run as-is on a Linux Jenkins agent
-- Test coverage is currently limited to authentication and dashboard flows; broader business-workflow coverage is in progress (see Roadmap)
 
-
-* Selenium Grid execution
-* Docker containerization
-* REST Assured API integration
-* Database validation
-* Cloud execution using BrowserStack/Sauce Labs
- 4e1925c6e78222c845edd75d262f291551738a25
-
----
 
 ## Author
 
