@@ -195,7 +195,7 @@ driver.set(new FirefoxDriver(options));
 	getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(implicitWait));
 	
 	//maximise the browser
-	getDriver().manage().window().maximize();
+	//getDriver().manage().window().maximize();
 	
 	
 	//Navigate to URL
