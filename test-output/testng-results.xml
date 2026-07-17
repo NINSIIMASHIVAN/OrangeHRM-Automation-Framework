@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="12" passed="12" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-07-17T11:26:47 EAT" name="OrangeHRM Regression Suite" finished-at="2026-07-17T11:32:46 EAT" duration-ms="359003">
+    <groups>
+    </groups>
+    <test started-at="2026-07-17T11:26:47 EAT" name="Regression Tests" finished-at="2026-07-17T11:32:46 EAT" duration-ms="359003">
+      <class name="com.OrangeHRM.test.ClaimsTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.OrangeHRM.test.ClaimsTest@687e99d8]" started-at="2026-07-17T11:30:31 EAT" name="setup" finished-at="2026-07-17T11:30:37 EAT" duration-ms="6156" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setupPages()[pri:0, instance:com.OrangeHRM.test.ClaimsTest@687e99d8]" started-at="2026-07-17T11:30:37 EAT" name="setupPages" finished-at="2026-07-17T11:30:39 EAT" duration-ms="1652" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupPages -->
+        <test-method signature="verifyClaimSubmittedSuccessfully(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.OrangeHRM.test.ClaimsTest@687e99d8]" started-at="2026-07-17T11:30:39 EAT" name="verifyClaimSubmittedSuccessfully" data-provider="claimData" finished-at="2026-07-17T11:30:44 EAT" duration-ms="4985" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Accommodation]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[United States Dollar]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Automated test claim submission]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyClaimSubmittedSuccessfully -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.OrangeHRM.test.ClaimsTest@687e99d8]" started-at="2026-07-17T11:30:44 EAT" name="tearDown" finished-at="2026-07-17T11:30:44 EAT" duration-ms="279" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.OrangeHRM.test.ClaimsTest@687e99d8]" started-at="2026-07-17T11:30:44 EAT" name="setup" finished-at="2026-07-17T11:30:50 EAT" duration-ms="6098" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setupPages()[pri:0, instance:com.OrangeHRM.test.ClaimsTest@687e99d8]" started-at="2026-07-17T11:30:50 EAT" name="setupPages" finished-at="2026-07-17T11:30:53 EAT" duration-ms="2037" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupPages -->
+        <test-method signature="verifyClaimFailsWithoutSelectingEvent()[pri:2, instance:com.OrangeHRM.test.ClaimsTest@687e99d8]" started-at="2026-07-17T11:30:53 EAT" name="verifyClaimFailsWithoutSelectingEvent" finished-at="2026-07-17T11:30:56 EAT" duration-ms="3680" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyClaimFailsWithoutSelectingEvent -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.OrangeHRM.test.ClaimsTest@687e99d8]" started-at="2026-07-17T11:30:56 EAT" name="tearDown" finished-at="2026-07-17T11:30:57 EAT" duration-ms="324" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.OrangeHRM.test.ClaimsTest@687e99d8]" started-at="2026-07-17T11:30:57 EAT" name="setup" finished-at="2026-07-17T11:31:05 EAT" duration-ms="8110" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setupPages()[pri:0, instance:com.OrangeHRM.test.ClaimsTest@687e99d8]" started-at="2026-07-17T11:31:05 EAT" name="setupPages" finished-at="2026-07-17T11:31:06 EAT" duration-ms="1550" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupPages -->
+        <test-method signature="verifyClaimFailsWithoutSelectingCurrency()[pri:3, instance:com.OrangeHRM.test.ClaimsTest@687e99d8]" started-at="2026-07-17T11:31:06 EAT" name="verifyClaimFailsWithoutSelectingCurrency" finished-at="2026-07-17T11:31:11 EAT" duration-ms="5026" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyClaimFailsWithoutSelectingCurrency -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.OrangeHRM.test.ClaimsTest@687e99d8]" started-at="2026-07-17T11:31:11 EAT" name="tearDown" finished-at="2026-07-17T11:31:11 EAT" duration-ms="220" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.OrangeHRM.test.ClaimsTest@687e99d8]" started-at="2026-07-17T11:31:11 EAT" name="setup" finished-at="2026-07-17T11:31:17 EAT" duration-ms="6016" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setupPages()[pri:0, instance:com.OrangeHRM.test.ClaimsTest@687e99d8]" started-at="2026-07-17T11:31:17 EAT" name="setupPages" finished-at="2026-07-17T11:31:19 EAT" duration-ms="1699" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupPages -->
+        <test-method signature="verifyClaimFailsWithAllFieldsEmpty()[pri:4, instance:com.OrangeHRM.test.ClaimsTest@687e99d8]" started-at="2026-07-17T11:31:19 EAT" name="verifyClaimFailsWithAllFieldsEmpty" finished-at="2026-07-17T11:31:24 EAT" duration-ms="5123" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyClaimFailsWithAllFieldsEmpty -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.OrangeHRM.test.ClaimsTest@687e99d8]" started-at="2026-07-17T11:31:24 EAT" name="tearDown" finished-at="2026-07-17T11:31:25 EAT" duration-ms="340" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.OrangeHRM.test.ClaimsTest -->
+      <class name="com.OrangeHRM.test.HomePageTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.OrangeHRM.test.HomePageTest@5c671d7f]" started-at="2026-07-17T11:27:29 EAT" name="setup" finished-at="2026-07-17T11:27:34 EAT" duration-ms="5811" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setupPages()[pri:0, instance:com.OrangeHRM.test.HomePageTest@5c671d7f]" started-at="2026-07-17T11:27:34 EAT" name="setupPages" finished-at="2026-07-17T11:27:34 EAT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupPages -->
+        <test-method signature="verifyDashboardIsDisplayed(java.lang.String,java.lang.String)[pri:0, instance:com.OrangeHRM.test.HomePageTest@5c671d7f]" started-at="2026-07-17T11:27:34 EAT" name="verifyDashboardIsDisplayed" data-provider="validLoginData" finished-at="2026-07-17T11:27:38 EAT" duration-ms="4020" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDashboardIsDisplayed -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.OrangeHRM.test.HomePageTest@5c671d7f]" started-at="2026-07-17T11:27:38 EAT" name="tearDown" finished-at="2026-07-17T11:27:39 EAT" duration-ms="315" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.OrangeHRM.test.HomePageTest -->
+      <class name="com.OrangeHRM.test.LoginPageTest">
+        <test-method is-config="true" signature="loadConfig()[pri:0, instance:com.OrangeHRM.test.LoginPageTest@13b6aecc]" started-at="2026-07-17T11:26:47 EAT" name="loadConfig" finished-at="2026-07-17T11:26:47 EAT" duration-ms="27" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loadConfig -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.OrangeHRM.test.LoginPageTest@13b6aecc]" started-at="2026-07-17T11:26:49 EAT" name="setup" finished-at="2026-07-17T11:26:59 EAT" duration-ms="10006" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setupPages()[pri:0, instance:com.OrangeHRM.test.LoginPageTest@13b6aecc]" started-at="2026-07-17T11:26:59 EAT" name="setupPages" finished-at="2026-07-17T11:26:59 EAT" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupPages -->
+        <test-method signature="verifyInvalidLoginTest(java.lang.String,java.lang.String)[pri:0, instance:com.OrangeHRM.test.LoginPageTest@13b6aecc]" started-at="2026-07-17T11:26:59 EAT" name="verifyInvalidLoginTest" data-provider="invalidLoginData" finished-at="2026-07-17T11:27:00 EAT" duration-ms="1839" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[wrong User]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[wrongPas]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyInvalidLoginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.OrangeHRM.test.LoginPageTest@13b6aecc]" started-at="2026-07-17T11:27:00 EAT" name="tearDown" finished-at="2026-07-17T11:27:01 EAT" duration-ms="300" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.OrangeHRM.test.LoginPageTest@13b6aecc]" started-at="2026-07-17T11:27:01 EAT" name="setup" finished-at="2026-07-17T11:27:23 EAT" duration-ms="22172" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setupPages()[pri:0, instance:com.OrangeHRM.test.LoginPageTest@13b6aecc]" started-at="2026-07-17T11:27:23 EAT" name="setupPages" finished-at="2026-07-17T11:27:23 EAT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupPages -->
+        <test-method signature="verifyValidLoginTest(java.lang.String,java.lang.String)[pri:0, instance:com.OrangeHRM.test.LoginPageTest@13b6aecc]" started-at="2026-07-17T11:27:23 EAT" name="verifyValidLoginTest" data-provider="validLoginData" finished-at="2026-07-17T11:27:28 EAT" duration-ms="5109" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyValidLoginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.OrangeHRM.test.LoginPageTest@13b6aecc]" started-at="2026-07-17T11:27:28 EAT" name="tearDown" finished-at="2026-07-17T11:27:29 EAT" duration-ms="396" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.OrangeHRM.test.LoginPageTest -->
+      <class name="com.OrangeHRM.test.AddEmployeeTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.OrangeHRM.test.AddEmployeeTest@757277dc]" started-at="2026-07-17T11:27:39 EAT" name="setup" finished-at="2026-07-17T11:27:45 EAT" duration-ms="6240" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setupPages()[pri:0, instance:com.OrangeHRM.test.AddEmployeeTest@757277dc]" started-at="2026-07-17T11:27:45 EAT" name="setupPages" finished-at="2026-07-17T11:28:07 EAT" duration-ms="22089" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupPages -->
+        <test-method signature="verifyAddEmployeeWithLoginDetails(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.OrangeHRM.test.AddEmployeeTest@757277dc]" started-at="2026-07-17T11:28:07 EAT" name="verifyAddEmployeeWithLoginDetails" data-provider="addEmployeeData" finished-at="2026-07-17T11:28:33 EAT" duration-ms="26112" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Eliana]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Babirye]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Nakyeyune]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[ElianaBabirye2]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[0702959972@Sn]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[0702959972@Sn]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddEmployeeWithLoginDetails -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.OrangeHRM.test.AddEmployeeTest@757277dc]" started-at="2026-07-17T11:28:33 EAT" name="tearDown" finished-at="2026-07-17T11:28:34 EAT" duration-ms="349" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.OrangeHRM.test.AddEmployeeTest@757277dc]" started-at="2026-07-17T11:28:34 EAT" name="setup" finished-at="2026-07-17T11:28:40 EAT" duration-ms="6714" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setupPages()[pri:0, instance:com.OrangeHRM.test.AddEmployeeTest@757277dc]" started-at="2026-07-17T11:28:40 EAT" name="setupPages" finished-at="2026-07-17T11:29:06 EAT" duration-ms="25219" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupPages -->
+        <test-method signature="verifyAddEmployeeWithoutLoginDetails()[pri:2, instance:com.OrangeHRM.test.AddEmployeeTest@757277dc]" started-at="2026-07-17T11:29:06 EAT" name="verifyAddEmployeeWithoutLoginDetails" finished-at="2026-07-17T11:29:37 EAT" duration-ms="31222" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddEmployeeWithoutLoginDetails -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.OrangeHRM.test.AddEmployeeTest@757277dc]" started-at="2026-07-17T11:29:37 EAT" name="tearDown" finished-at="2026-07-17T11:29:37 EAT" duration-ms="381" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.OrangeHRM.test.AddEmployeeTest@757277dc]" started-at="2026-07-17T11:29:37 EAT" name="setup" finished-at="2026-07-17T11:29:43 EAT" duration-ms="6128" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setupPages()[pri:0, instance:com.OrangeHRM.test.AddEmployeeTest@757277dc]" started-at="2026-07-17T11:29:43 EAT" name="setupPages" finished-at="2026-07-17T11:30:05 EAT" duration-ms="21613" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupPages -->
+        <test-method signature="verifyUserNameAlreadyExists()[pri:3, instance:com.OrangeHRM.test.AddEmployeeTest@757277dc]" started-at="2026-07-17T11:30:05 EAT" name="verifyUserNameAlreadyExists" finished-at="2026-07-17T11:30:31 EAT" duration-ms="25755" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserNameAlreadyExists -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.OrangeHRM.test.AddEmployeeTest@757277dc]" started-at="2026-07-17T11:30:31 EAT" name="tearDown" finished-at="2026-07-17T11:30:31 EAT" duration-ms="445" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.OrangeHRM.test.AddEmployeeTest -->
+      <class name="com.OrangeHRM.test.ClaimsAssignmentTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.OrangeHRM.test.ClaimsAssignmentTest@e4487af]" started-at="2026-07-17T11:31:25 EAT" name="setup" finished-at="2026-07-17T11:31:33 EAT" duration-ms="8254" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setupPages()[pri:0, instance:com.OrangeHRM.test.ClaimsAssignmentTest@e4487af]" started-at="2026-07-17T11:31:33 EAT" name="setupPages" finished-at="2026-07-17T11:31:36 EAT" duration-ms="2826" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupPages -->
+        <test-method signature="verifyAdminCanAssignEmployeeClaim()[pri:1, instance:com.OrangeHRM.test.ClaimsAssignmentTest@e4487af]" started-at="2026-07-17T11:31:36 EAT" name="verifyAdminCanAssignEmployeeClaim" finished-at="2026-07-17T11:32:35 EAT" duration-ms="58962" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAdminCanAssignEmployeeClaim -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.OrangeHRM.test.ClaimsAssignmentTest@e4487af]" started-at="2026-07-17T11:32:35 EAT" name="tearDown" finished-at="2026-07-17T11:32:35 EAT" duration-ms="445" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.OrangeHRM.test.ClaimsAssignmentTest@e4487af]" started-at="2026-07-17T11:32:35 EAT" name="setup" finished-at="2026-07-17T11:32:42 EAT" duration-ms="6409" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setupPages()[pri:0, instance:com.OrangeHRM.test.ClaimsAssignmentTest@e4487af]" started-at="2026-07-17T11:32:42 EAT" name="setupPages" finished-at="2026-07-17T11:32:43 EAT" duration-ms="1579" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupPages -->
+        <test-method signature="verifyNoMatchForNonExistentEmployee()[pri:2, instance:com.OrangeHRM.test.ClaimsAssignmentTest@e4487af]" started-at="2026-07-17T11:32:43 EAT" name="verifyNoMatchForNonExistentEmployee" finished-at="2026-07-17T11:32:46 EAT" duration-ms="2516" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNoMatchForNonExistentEmployee -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.OrangeHRM.test.ClaimsAssignmentTest@e4487af]" started-at="2026-07-17T11:32:46 EAT" name="tearDown" finished-at="2026-07-17T11:32:46 EAT" duration-ms="299" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.OrangeHRM.test.ClaimsAssignmentTest -->
+    </test> <!-- Regression Tests -->
+  </suite> <!-- OrangeHRM Regression Suite -->
+</testng-results>

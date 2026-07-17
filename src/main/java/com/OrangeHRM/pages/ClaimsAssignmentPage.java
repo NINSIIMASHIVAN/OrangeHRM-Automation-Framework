@@ -68,11 +68,12 @@ public class ClaimsAssignmentPage {
     }
 
     public void searchClaimByEmployeeName(String firstName, String lastName) {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
         WebElement nameField = wait.until(ExpectedConditions.elementToBeClickable(employeeNameField));
         nameField.clear();
         nameField.sendKeys(firstName);
 
+        // Increased wait time for dropdown suggestion to appear (headless mode issue)
         By suggestion = By.xpath("//div[@role='listbox']//span[contains(text(),'" + lastName + "')]");
         wait.until(ExpectedConditions.visibilityOfElementLocated(suggestion)).click();
 

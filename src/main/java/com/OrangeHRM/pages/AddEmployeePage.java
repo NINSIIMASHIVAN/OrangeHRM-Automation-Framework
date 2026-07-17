@@ -129,7 +129,8 @@ public class AddEmployeePage {
 	public boolean isEmployeeAddedSuccessfully() 
 	{
 		try {
-			WebDriverWait wait= new WebDriverWait(driver, Duration.ofSeconds(10));
+			// Increased to 30 seconds for headless mode stability
+			WebDriverWait wait= new WebDriverWait(driver, Duration.ofSeconds(30));
 			wait.until(ExpectedConditions.visibilityOfElementLocated(successToast));
 			return true;
 		} catch (Exception e) {
@@ -140,7 +141,8 @@ public class AddEmployeePage {
 	public boolean isRequiredFieldErrorDisplayed() 
 	{
 		try {
-			WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(10));
+			// Increased to 20 seconds for headless mode stability
+			WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(20));
 			wait.until(ExpectedConditions.visibilityOfElementLocated(requiredFieldError));
 			 return true;
 		} catch (Exception e) {
@@ -172,7 +174,8 @@ public class AddEmployeePage {
 public boolean UserNameAlreadyExistsErrorDisplayed() 
 	{
 		try {
-			WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(10));
+			// Increased to 20 seconds for headless mode stability
+			WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(20));
 			wait.until(ExpectedConditions.visibilityOfElementLocated(usernameAlreadyExistsError));
 			 return true;
 		} catch (Exception e) {
