@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [OrangeHRM Regression Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.OrangeHRM.listeners.TestListener"/>
+  </listeners>
+  <test thread-count="5" name="Regression Tests(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.OrangeHRM.test.ClaimsTest">
+        <methods>
+          <include name="verifyClaimFailsWithoutSelectingCurrency"/>
+          <include name="loadConfig"/>
+          <include name="setup"/>
+          <include name="setupPages"/>
+          <include name="tearDown"/>
+          <include name="verifyClaimFailsWithAllFieldsEmpty"/>
+          <include name="verifyClaimFailsWithoutSelectingEvent"/>
+          <include name="verifyClaimSubmittedSuccessfully"/>
+        </methods>
+      </class> <!-- com.OrangeHRM.test.ClaimsTest -->
+      <class name="com.OrangeHRM.test.AddEmployeeTest">
+        <methods>
+          <include name="verifyAddEmployeeWithLoginDetails" invocation-numbers="0"/>
+          <include name="loadConfig"/>
+          <include name="setup"/>
+          <include name="setupPages"/>
+          <include name="tearDown"/>
+          <include name="verifyUserNameAlreadyExists"/>
+        </methods>
+      </class> <!-- com.OrangeHRM.test.AddEmployeeTest -->
+      <class name="com.OrangeHRM.test.ClaimsAssignmentTest">
+        <methods>
+          <include name="verifyAdminCanAssignEmployeeClaim"/>
+          <include name="setupPages"/>
+          <include name="loadConfig"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.OrangeHRM.test.ClaimsAssignmentTest -->
+    </classes>
+  </test> <!-- Regression Tests(failed) -->
+</suite> <!-- Failed suite [OrangeHRM Regression Suite] -->
