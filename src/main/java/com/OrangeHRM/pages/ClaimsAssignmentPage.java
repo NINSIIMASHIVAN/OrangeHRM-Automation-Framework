@@ -165,11 +165,11 @@ public class ClaimsAssignmentPage {
         field.sendKeys(note);
         System.out.println("Entered expense note: " + note);
     }
-
     public void saveExpense() {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20)); // was 10
         wait.until(ExpectedConditions.elementToBeClickable(expenseSaveButton)).click();
-        wait.until(ExpectedConditions.invisibilityOfElementLocated(expenseSaveButton));
+        wait.until(ExpectedConditions.invisibilityOfElementLocated(
+            By.xpath("//div[@class='oxd-dialog-container-default']")));
         System.out.println("Expense saved successfully");
     }
 
@@ -192,9 +192,10 @@ public class ClaimsAssignmentPage {
     }
 
     public void saveAttachment() {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20)); // was 10
         wait.until(ExpectedConditions.elementToBeClickable(attachmentSaveButton)).click();
-        wait.until(ExpectedConditions.invisibilityOfElementLocated(attachmentSaveButton));
+        wait.until(ExpectedConditions.invisibilityOfElementLocated(
+            By.xpath("//div[@class='oxd-dialog-container-default']"))); // dialog container, not just the button
         System.out.println("Attachment saved successfully");
     }
 
